@@ -38,7 +38,7 @@ target_groups = [
 client = TelegramClient("session", api_id, api_hash)
 
 async def main():
-    await client.start(phone=phone_number)
+    await client.start()
     cycle = 1
 
     while True:
@@ -59,3 +59,4 @@ async def main():
         await asyncio.sleep(300)  # 6 hours
 
 asyncio.run(main())
+
